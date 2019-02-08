@@ -9,7 +9,7 @@ module ApplicationHelper
   end
 
   def vue_app(app, props = {})
-    app_name = app.to_s.tr('_', '-')
+    app_name = app.to_s.dasherize
     add_javascript_pack(app_name)
     options = {
       'vue-app': app_name,
@@ -17,7 +17,7 @@ module ApplicationHelper
     }
 
     props = props.stringify_keys.map do |key, val|
-      ["data-#{key.tr('_', '-')}", val]
+      ["data-#{key.dasherize}", val]
     end
 
     content_tag :div, Hash[props].merge(options) do
