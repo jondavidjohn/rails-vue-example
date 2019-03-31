@@ -1,0 +1,5 @@
+{
+  "app/javascript/*.vue": { "alternate": "spec/javascript/{}.spec.js" },
+  "app/javascript/*.js": { "alternate": "spec/javascript/{}.spec.js" },
+  "spec/javascript/*.spec.js": { "alternate": [ "app/javascript/{}.vue", "app/javascript/{}.js" ]}
+}
