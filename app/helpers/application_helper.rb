@@ -17,11 +17,9 @@ module ApplicationHelper
     }
 
     props = props.stringify_keys.map do |key, val|
-      ["data-#{key.dasherize}", val]
+      ["data-#{key.dasherize}", val.to_json]
     end
 
-    content_tag :div, Hash[props].merge(options) do
-      content_tag :div, '', class: 'vue-loader'
-    end
+    content_tag :div, Hash[props].merge(options)
   end
 end
