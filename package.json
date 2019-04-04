@@ -28,9 +28,9 @@
     ]
   },
   "dependencies": {
-    "@rails/actioncable": "^6.0.0-alpha",
-    "@rails/activestorage": "^6.0.0-alpha",
-    "@rails/ujs": "^6.0.0-alpha",
+    "@rails/actioncable": "^6.0.0-beta3",
+    "@rails/activestorage": "^6.0.0-beta3",
+    "@rails/ujs": "^6.0.0-beta3",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-loader": "^8.0.5",
     "turbolinks": "^5.2.0",
