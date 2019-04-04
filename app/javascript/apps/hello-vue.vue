@@ -1,11 +1,14 @@
 <template>
   <div>
-    <h1>Hello Vue</h1>
+    <h1>{{ title }}</h1>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'HelloVue'
+    name: 'HelloVue',
+    props: {
+      title: String
+    }
   }
 </script>
