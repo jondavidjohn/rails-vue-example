@@ -1,0 +1,14 @@
+Description:
+    This generator creates the structure you need to create a new Vue app.
+
+    Once generated, you can then render the app in any slim template with
+
+      = vue_app :new_app
+
+Example:
+    rails generate vue_app new-app
+
+    This will create:
+        app/javascript/packs/new-app.js # The entry point for your app
+        app/javascript/apps/new-app/index.vue # The primary index of your app
+        tests/javascript/apps/new-app/index.test.js # The associated spec file for your app

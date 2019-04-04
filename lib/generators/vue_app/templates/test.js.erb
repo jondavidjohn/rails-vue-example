@@ -1,0 +1,11 @@
+/* global describe, it, expect */
+
+import { mount } from '@vue/test-utils'
+import <%= class_name %> from '@/apps/<%= name %>'
+
+describe('<%= class_name %>', () => {
+  it('should render', () => {
+    const app = mount(<%= class_name %>)
+    expect(app).toMatchSnapshot()
+  })
+})
